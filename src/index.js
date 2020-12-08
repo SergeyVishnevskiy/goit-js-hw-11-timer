@@ -3,14 +3,11 @@ import './styles.css';
 class CountdownTimer {
   constructor({ selector, targetDate }) {
     this.timer = document.querySelector(selector);
+    this.daysRef = document.querySelector('[data-value="days"]');
+    this.hoursRef = document.querySelector('[data-value="hours"]');
+    this.minsRef = document.querySelector('[data-value="mins"]');
+    this.secsRef = document.querySelector('[data-value="secs"]');
     this.targetDate = targetDate;
-
-    this.refs = {
-      daysValue: document.querySelector('[data-value="days"]'),
-      hoursValue: document.querySelector('[data-value="hours"]'),
-      minsValue: document.querySelector('[data-value="mins"]'),
-      secsValue: document.querySelector('[data-value="secs"]'),
-    };
   }
 
   getTimeRemaining(time) {
@@ -20,10 +17,10 @@ class CountdownTimer {
     );
     const mins = this.pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)));
     const secs = this.pad(Math.floor((time % (1000 * 60)) / 1000));
-    this.refs.daysValue.textContent = `${days}`;
-    this.refs.hoursValue.textContent = `${hours}`;
-    this.refs.minsValue.textContent = `${mins}`;
-    this.refs.secsValue.textContent = `${secs}`;
+    this.daysRef.textContent = `${days}`;
+    this.hoursRef.textContent = `${hours}`;
+    this.minsRef.textContent = `${mins}`;
+    this.secsRef.textContent = `${secs}`;
   }
 
   setTimer = setInterval(() => {
