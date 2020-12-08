@@ -22,7 +22,7 @@ h1 {
 
 .field {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 40px;
   font-family: cursive;
   color: rgb(160, 22, 165);
   font-weight: 400;
@@ -36,8 +36,8 @@ h1 {
     rgba(0, 212, 255, 1) 100%
   );
   padding: 20px;
-  border-radius: 10px;
-  width: 200px;
+  border-radius: 50%;
+  width: 250px;
 }
 
 .label {
@@ -48,7 +48,7 @@ h1 {
 
 .value {
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 50%;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -57,7 +57,7 @@ h1 {
     rgba(0, 212, 255, 1) 100%
   );
   display: inline-block;
-  width: 150px;
+  width: 160px;
 }
 .text {
   text-transform: uppercase;
