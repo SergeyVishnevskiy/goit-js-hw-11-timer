@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Elsie Swash Caps", cursive;
+  font-family: 'Elsie Swash Caps', cursive;
   background-image: url(https://i.siteapi.org/LTPf1WAUCxsnheX68YhaM9BRf54=/0x0:800x500/88b6ade8d505f91.s.siteapi.org/img/pbvip246n5wgw484ocooo4sws0s0ws);
   text-align: center;
 }
@@ -35,7 +35,7 @@ h1 {
     rgba(39, 94, 133, 1) 50%,
     rgba(0, 212, 255, 1) 100%
   );
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
   width: 200px;
 }
