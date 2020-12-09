@@ -3,10 +3,10 @@ import './styles.css';
 class CountdownTimer {
   constructor({ selector, targetDate }) {
     this.timer = document.querySelector(selector);
-    this.daysRef = document.querySelector('[data-value="days"]');
-    this.hoursRef = document.querySelector('[data-value="hours"]');
-    this.minsRef = document.querySelector('[data-value="mins"]');
-    this.secsRef = document.querySelector('[data-value="secs"]');
+    this.daysRef = this.timer.querySelector('[data-value="days"]');
+    this.hoursRef = this.timer.querySelector('[data-value="hours"]');
+    this.minsRef = this.timer.querySelector('[data-value="mins"]');
+    this.secsRef = this.timer.querySelector('[data-value="secs"]');
     this.targetDate = targetDate;
   }
 
@@ -44,7 +44,12 @@ class CountdownTimer {
   }
 }
 
-const newTimer = new CountdownTimer({
+const newTimerOne = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('Jan 1, 2021'),
+});
+
+const newTimerTwo = new CountdownTimer({
+  selector: '#timer-2',
+  targetDate: new Date('Jan 1, 2022'),
 });
